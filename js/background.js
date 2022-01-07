@@ -17,15 +17,16 @@ const images = [
     "15.jpg",
     "16.jpg",
     "17.jpg",
-    "18.jpg",
 ];
 
 
 
 const chosenImg = images[Math.floor(Math.random()* images.length)];
+const bgImg = `img/${chosenImg}`;
+// const background = document.createElement("img");
 
-const background = document.createElement("img");
+// background.src = `img/${chosenImg}`;
 
-background.src = `img/${chosenImg}`;
+// document.body.appendChild(background);
 
-document.body.appendChild(background);
+document.body.background = bgImg;
